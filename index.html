@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Plant Swap</title>
+</head>
+
+<body>
+    <img class="buurtcampus_topleft_logo" src="assets/BuurtcampusOostLogo.svg" alt="Buurtcampus">
+    
+    <header>
+        <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+
+        <img src="assets/stekjesbieb.jpg" class="frontpage_stekjesbieb_img" alt="Stekjesbieb">
+
+        <article class="header_article">
+            <h2>Hoe werkt het?</h2>
+            <p>Heb jij een of meerdere plantenstekjes over en zou je die graag willen ruilen voor een nieuw plantje?</p>
+            <br>    
+            <p>Meld je stekje hier aan en ruil ‘m via de app. Schrijf de Latijnse naam van je plant en eventuele verzorgingstips op een labeltje en neem ‘m mee naar de OBA Linnaeusstraat in Amsterdam.  
+            </p>
+            <button onclick="dialog_stekje_aanmelden.showModal()">Stekje aanmelden</button>
+                <dialog id="dialog_stekje_aanmelden">
+                    <form method="dialog">
+                        <button class="dialog_backout_button"><img src="assets/greenX.png" alt="terugknop"></button>
+                        <h2>Stekje aanmelden</h2>
+                        <section class="input_stekje_aanmelden">
+                            <input type="text" placeholder="Naam">
+                            <input type="text" placeholder="Wat voor stekje biedt u aan?">
+                            <input type="text" placeholder="Welk stekje wilt u?">
+                            <input type="submit" value="Let's do it">
+                        </section>
+                    </form>
+                </dialog>
+        </article>                                  
+    </header>
+
+    <main> 
+        <div class="container">
+
+            <h2>Beschikbare stekjes</h2>
+
+            <section class="stekjeslijst">
+
+                <div>
+                    <img src="assets/plant(1).avif" alt="Orchidee">
+
+                    <dialog id="dialog">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialog_backout_button" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Orchidee</h3>
+                                <img src="assets/plant(1).avif" alt="Orchidee">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+
+                    <button class="stekjes_meer_info_button" onclick="dialog.showModal()">Orchidee</button>
+
+                </div>
+                
+                <div>
+                    <img src="assets/plant(2).avif" alt="Kale Jonker">
+
+                    <dialog id="dialog2">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Kale Jonker</h3>
+                                <img src="assets/plant(2).avif" alt="kale jonker">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+
+                    <button class="stekjes_meer_info_button" onclick="dialog2.showModal()">Kale Jonker</button>
+
+                </div> 
+
+                <div>
+                    <img src="assets/plant(3).avif" alt="Duifkruid">
+
+                    <dialog id="dialog3">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Duifkruid</h3>
+                                <img src="assets/plant(3).avif" alt="Duifkruid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+
+                    <button class="stekjes_meer_info_button" onclick="dialog3.showModal()">Duifkruid</button>
+        
+                </div> 
+
+                <div>
+                    <img src="assets/plant(4).avif" alt="Longkruid">
+
+                    <dialog id="dialog4">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Longkruid</h3>
+                                <img src="assets/plant(4).avif" alt="Longkruid">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+
+                    <button class="stekjes_meer_info_button" onclick="dialog4.showModal()">Longkruid</button>
+       
+                </div> 
+
+                <div>
+                    <img src="assets/plant(5).avif" alt="Bieslook">
+
+                    <dialog id="dialog5">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Bieslook</h3>
+                                <img src="assets/plant(5).avif" alt="Bieslook">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+
+                    <button class="stekjes_meer_info_button" onclick="dialog5.showModal()">Bieslook</button>
+       
+                </div> 
+
+                <div>
+                    <img src="assets/plant(6).avif" alt="Zonnebloem">
+
+                    <dialog id="dialog6">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Bieslook</h3>
+                                <img src="assets/plant(6).avif" alt="Bieslook">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+       
+                    <button class="stekjes_meer_info_button" onclick="dialog6.showModal()">Zonnebloem</button>
+
+                </div> 
+
+                <div>
+                    <img src="assets/plant(7).avif" alt="Cactus">
+
+                    <dialog id="dialog7">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Bieslook</h3>
+                                <img src="assets/plant(7).avif" alt="Bieslook">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+
+                    <button class="stekjes_meer_info_button" onclick="dialog3.showModal()">Cactus</button>
+
+                </div> 
+
+                <div>
+                    <img src="assets/plant(8).avif" alt="Paardenbloem">
+
+                    <dialog id="dialog8">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Bieslook</h3>
+                                <img src="assets/plant(8).avif" alt="paardebloem">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+
+                    <button class="stekjes_meer_info_button" onclick="dialog8.showModal()">Paardenbloem</button>
+
+                </div> 
+
+                <div>
+                    <img src="assets/plant(9).avif" alt="Borealis">
+
+                    <dialog id="dialog9">
+                        <form method="dialog">
+                            <div class="stekdialog">
+                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
+                                <h3>Bieslook</h3>
+                                <img src="assets/plant(9).avif" alt="Borealis">
+                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                            </div>  
+                        </form>
+                    </dialog>
+
+                    <button class="stekjes_meer_info_button" onclick="dialog8.showModal()">Borealis</button>
+       
+                </div> 
+           
+            </section>
+
+        </div>
+
+        <section class="verzorgingstips">
+            <h2>Hoe verzorg je nou zo'n stekje?</h2>
+            <ul>
+                <li>Stek je plantjes bij voorkeur in het voorjaar. Er is genoeg licht en warmte om je plantjes goed te laten groeien.</li>
+                <li>Maak je plantenpotjes goed schoon voor je gaat stekken, zo ga je schimmelvorming tegen.</li>
+                <li>Gebruik een scherpe snoeischaar voor het knippen van stekjes, ook zo ga je schimmelvorming tegen.</li>
+                <li>Less is more! 2x per week een scheutje water is meer dan genoeg. </li>
+                
+            </ul>
+        </section>
+
+        <section class="content">
+
+            <article>
+                <h2>Over ons</h2>
+                <p>De Buurtcampus Oost heeft als doel Amsterdam-Oost duurzamer, inclusiever en gezonder te maken. Plant Swap Amsterdam zorgt ervoor dat plantenliefhebbers elkaar ontmoeten in de bibliotheek. Daarnaast hebben planten in huis een positief effect op je lichamelijke en geestelijke gezondheid. Veel mensen weten niet goed hoe ze voor planten moeten zorgen en kopen nieuwe als ze dood gaan. In het kader van duurzaamheid, gezondheid en meer sociale connectie, is PlantSwap Amsterdam een plek van sociale ontmoeting, waar mensen samen leren over planten.</p>
+            </article>
+            
+            <article>
+                <h2>Plantje doneren</h2>
+                <p>Heb jij (net als wij) teveel planten in huis? Wij zijn super blij als je stekjes komt doneren. Je kunt ze aanmelden via de app en daarna neerzetten in de PlantSwap kast in de bieb.</p>
+            </article>
+
+            <article>
+                <h2>Duurzaamheid</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium. Integer vitae ornare ipsum, non efficitur massa. Donec gravida rutrum diam.</p>
+            </article>
+
+            <article>
+                <h2>Workshops</h2>
+                <p>De eerste workshop ‘Planten stekken en verzorgen’ zal plaatsvinden in maart 2023 in de OBA Linnaeusstraat, meld je hier aan voor meer informatie en om op de hoogte te blijven.</p>
+            </article>
+
+            <article>
+                <h2>Plantendocter</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium. Integer vitae ornare ipsum, non efficitur massa. Donec gravida rutrum diam.</p>
+            </article>
+            
+            <article>
+                <h2>Community</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium. Integer vitae ornare ipsum, non efficitur massa. Donec gravida rutrum diam.</p>
+            </article>
+
+        </section>
+
+        <section id="buurtcampus_googlemaps">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.6761957784674!2d4.92404451559515!3d52.358157855963306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60976cd336d71%3A0x6610b420a3c48f0e!2sLinnaeusstraat%2044%2C%201092%20CL%20Amsterdam!5e0!3m2!1snl!2snl!4v1667915508745!5m2!1snl!2snl" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </section>
+    
+
+    </main>
+
+    <footer>
+        <img src="assets\BuurtcampusFooter.svg" alt="footerafbeelding">
+        <p>Buurtcampus is een initiatief van Hogeschool van Amsterdam (HvA) en Openbare Bibliotheek Amsterdam (OBA). Meer Buurtcampussen? Kijk op www.buurtcampusoost.nl of op www.buurtcampusnieuwwest.nl.
+        </p>
+    </footer>
+
+</body>
+
+
+
+</html>

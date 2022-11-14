@@ -1,44 +1,45 @@
-# Corporate identity
-Ontwerp en maak voor een opdrachtgever een component of website op basis van een bestaande huisstijl 
+# All Human - Accessible Website
 
+Ontwerp en maak voor een opdrachtgever een component/pagina/site toegankelijk volgens WCAG richtlijnen.
+ 
 ## Context
-Deze leertaak hoort bij sprint 4 Look and Feel. Dit is een opdracht die je individueel uitvoert voor een opdrachtgever.
 
-Bij deze leertaak horen de volgende deeltaken:
-
-* [living styleguide](https://github.com/fdnd-task/look-and-feel-living-styleguide)
-* [custom properties](https://github.com/fdnd-task/look-and-feel-custom-properties)
+Deze leertaak hoort bij sprint 3: All Human. Dit is een opdracht die je individueel uitvoert voor een opdrachtgever.
 
 ## Doel van deze opdracht
-Je leert hoe onderdelen van een website op basis van een bestaande huisstijl maakt.
+
+Je leert hoe je een (gedeelte van een) website toegankelijk kan ontwerpen, bouwen en testen.
 
 ## Werkwijze
-Bij elke leertaak wordt de development-lifecycle doorlopen. Hierdoor ontwikkel je een standaard aanpak voor frontend praktijkvraagstukken, werk je systematisch aan leertaken, ervaar je de relevantie van het geleerde en verwerf je de kennis, houding en vaardigheden die de beroepspraktijk van je vraagt. De development lifecycle bestaat uit de stappen: Analyseren, Ontwerpen, Bouwen, Integreren en Testen.
+
+Bij elke leertaak wordt de development-lifecycle doorlopen. Hierdoor ontwikkel je een standaard aanpak voor frontend praktijkvraagstukken, werk je systematisch aan leertaken, ervaar je de relevantie van het geleerde en verwerf je de kennis, houding en vaardigheden die de beroepspraktijk van je vraagt.
+De development lifecycle bestaat uit de stappen: Analyseren, Ontwerpen, Bouwen, Integreren en Testen.
+
 
 ### Aanpak
-1. Kies een user story uit de backlog van het project waar je aan gaat werken. De projecten staan bij [FDND Agency](https://github.com/fdnd-agency).  
-2. Fork deze leertaak
-3. Kopieer/plak de user story waar jij aan gaat werken naar de Wiki van de geforkte repository, dit ga je ontwerpen en maken
-4. Documenteer je proces a.h.v de development life cycle
-5. En schrijf een goede readme
+
+1. Fork en Clone deze leertaak
+2. Kopieer de code van de user story waar je aan hebt gewerkt naar deze leertaak
+3. Schrijf de user story waar jij aan gaat werken in de Readme van deze leertaak, dit is wat je gaat ontwerpen, maken en testen
+4. Verwerk de feedback die je bij de Sprint Review van de vorige sprint hebt gekregen
+5. Voer verschillende toegankelijkheid tests uit op de bestaande code en verbeter de problemen
+6. Ga verder met uitwerken van de user story en gebruik daarbij de A11Y checklist
+7. Documenteer je proces a.h.v de development life cycle
+8. En schrijf een goede readme
 
 ## Criteria
 
-De focus van deze sprint ligt op het toepassen van een huisstijl en het maken van formulieren.
+De focus van deze sprint ligt op het toegankelijk maken van een (gedeelte van een) website.
 
-Voor deze leertaak gelden de gedragscriteria voor sprint 4: 
-
-* ~~Samenwerken: Draagt verantwoording voor eigen resultaten en verwerkt ontvangen feedback~~
-* Communiceren: Luistert naar wat een ander zegt en neemt dit serieus
-* Probleemoplossend vermogen: Analyseert een vraag en volgt de aangeboden oplossingsrichting
-* Probleemoplossend vermogen: Gebruikt aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving om een passende oplossing voor een opdrachtgever te realiseren
-* ~~Lerend vermogen: Toont beginnend inzicht in eigen capaciteiten en beperkingen en kan deze benoemen~~
+Voor deze leertaak gelden de gedragscriteria voor sprint 2: 
+* Methodisch handelen: Je past aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving toe
+* Communiceren: Je kan binnen de squad ontwerpkeuzes, eigen ideeën en producten begrijpelijk verwoorden
+* Probleemoplossend vermogen: Je gebruikt aangeboden principes en conventies op het gebied van frontend, interface design en vormgeving om een passende oplossing voor een opdrachtgever te realiseren
+* ~~Lerend vermogen: Je benoemt behandelde internationale ontwikkelingen in het vakgebied~~
 
 Deze opdracht is done als:
-- [ ] de door jou gemaakte onderdelen onderbouwd en aantoonbaar voldoen aan de huisstijl van de opdrachtgever
-- [ ] je hebt gewerkt volgens de verschillende fases van de development-lifecycle
-- [ ] je hebt je werk gedocumenteerd in de Readme en Wiki (user story, ontwerpbeslissingen, schetsen en code voorbeelden)
-- [ ] de website op Github staat en een live url heeft
 
-
-
+- [ ] Je hebt een Lighthouse test gedaan en gevonden problemen verholpen
+- [ ] Je hebt een een serie handmatige tests gedaan en gevonden problemen verholpen
+- [ ] Je hebt je werk gedocumenteerd in de Readme en Wiki 
+- [ ] de website staat op Github en heeft een live url

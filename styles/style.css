@@ -1,0 +1,351 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --textcolor: #333467;
+    --background-color:#333467;
+    --button-color: #DE6E3F;
+}
+
+@font-face {
+    font-family: Buurtcampus;
+    src: url("../assets/Buurtcampus.ttf");
+}
+
+h1{
+    font-family: BuurtCampus;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 140%;
+}
+
+.buurtcampus_topleft_logo{
+    margin-top: 20px;
+    margin-left: 1em;
+}
+
+header{
+    display: flex;
+    flex-direction: column; 
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 3em;
+    color: var(--textcolor);
+}
+                    
+header > h1{
+    font-family: BuurtCampus;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.frontpage_stekjesbieb_img{
+    width: 100%;
+    max-width: 35em;
+}
+
+header > article > button{
+    text-align: center;
+    margin-left: 25%;
+    width: 50%;
+    border: none;
+    height: 3em;
+    background-color: var(--button-color);
+    border-radius: 1em;
+    color: white;
+    font-size: 1.2em;
+    margin-top: 2em;
+}
+
+header > article > button:hover{
+    opacity: 80%;
+}
+
+#titel_logo{
+    width: 1.5em;
+}
+
+header article{
+    margin-top: 1em;
+    width: 90%;
+    max-width: 30em;
+}
+
+header h2{
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+.container{
+    margin-bottom: 2em;
+    padding-bottom: 2em;
+}
+
+.container h2{
+    text-align: center;
+    color: var(--background-color);
+    padding: 1em;
+}
+
+.stekjeslijst{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    padding-bottom: 1em;
+}
+
+.stekjeslijst::-webkit-scrollbar{
+    height: 0.5em;
+}
+
+.stekjeslijst::-webkit-scrollbar-thumb{
+    background-color: grey;
+}
+
+.stekjeslijst::-webkit-scrollbar-track{
+    background-color: white;
+}
+.stekjeslijst::-webkit-scrollbar-button{
+    width: 1em;
+}
+
+.stekjeslijst > div{
+    position: relative;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.stekjeslijst > div > img{
+    width: 250px;
+}
+
+.stekjes_meer_info_button{
+    position: absolute;
+    top: 83%;
+    background-color: white;
+    font-size:medium;
+    font-weight: 700;
+    border: none;
+    border-radius: 0.5em;
+    width: 80%;
+    height: 10%;
+}
+
+.stekjes_meer_info_button:hover{
+    opacity: 80%;
+}
+
+.verzorgingstips{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--background-color);
+    color: white;
+    padding: 2em;
+}
+
+.verzorgingstips > h2{
+    padding-bottom: 1em;
+}
+
+dialog{
+    border-radius: 0.5em;
+    border: none;
+    margin: auto;
+    width: 30em;
+    max-width: 30em;
+    height: 35em;
+}
+
+.input_stekje_aanmelden{
+    width: 20em;
+    margin-left: 10em;
+}
+
+.stekdialog{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    color: black;
+    background-color: white;
+    border: none;
+    padding: 1em;
+}
+
+.dialog_backout_button > img {
+    width: 30px;
+    background-color: transparent;
+    border: none;
+}
+
+.dialog_backout_button{
+    background-color: transparent;
+    border: none;
+    margin-left: 90%;
+}
+
+dialog:modal{
+    max-width: 100%;
+}
+
+dialog::backdrop{
+    opacity: 70%;
+    background-color: black;
+}
+
+.stekdialog > img{
+    width: 100%;
+}
+
+.dialog_stekje_aanmelden{
+    height: 30em;
+}
+
+.verzorgingstips > ul{
+    color: white;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--textcolor);
+    margin-bottom: 3em;
+}
+
+.content > article{
+    max-width: 30em;
+    width: 90%;
+}
+
+.content h2{
+    text-align: center;
+    margin: 1em;
+}
+
+#buurtcampus_googlemaps{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#buurtcampus_googlemaps > iframe{
+    max-width: 700px;
+}
+
+footer{
+    margin-top: 5em;
+    text-align: center;  
+    background-color: var(--background-color);
+    padding: 1em;
+    color: white;
+}
+
+footer img{
+    width: 100%;
+    max-width: 600px;
+}
+
+@media screen and (min-width: 820px){
+
+    header {
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+        column-gap: 4em;
+    }
+
+    header:focus{
+        border: 1px solid red;
+    }
+
+    .content{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: baseline;
+        flex-wrap: wrap;
+        column-gap: 5em;
+    }
+
+
+    .content h2{
+        text-align: center;
+        margin-bottom: 1em;
+    }
+
+    .container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stekjeslijst{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        flex-wrap: nowrap;
+        width: 100%;
+        padding-bottom: 2em;
+    }
+
+    button > img:hover{
+        transform: scale(1.2);
+    }
+    
+    .stekjeslijst > div > img {
+        width: 300px;
+        height: 400px;
+        padding:1em;
+    }
+    
+    #fotostek1{
+        border-radius: 1em;
+        width: 400px;
+        margin-top: 2em;
+    }
+
+    dialog{
+        border-radius: 1em;
+        margin: auto;
+        width: 30em;
+        padding: 0;
+        overflow-y: hidden;
+        transition: 0.2s;
+    }
+ 
+    dialog::backdrop{
+        opacity: 30%;
+        background-color: black;
+    }
+    
+    .stekdialog > img{
+        width: 100%;
+    }
+
+    #buurtcampus_googlemaps > iframe{
+        max-width: 700px;
+        height: 350px;
+    }
+}
