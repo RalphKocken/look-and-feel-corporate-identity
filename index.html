@@ -21,16 +21,17 @@
             <br>    
             <p>Meld je stekje hier aan en ruil ‘m via de app. Schrijf de Latijnse naam van je plant en eventuele verzorgingstips op een labeltje en neem ‘m mee naar de OBA Linnaeusstraat in Amsterdam.  
             </p>
-            <button onclick="dialog_stekje_aanmelden.showModal()">Stekje aanmelden</button>
+            <button class="main_button" onclick="dialog_stekje_aanmelden.showModal()">Stekje aanmelden</button>
                 <dialog id="dialog_stekje_aanmelden">
+                    <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
                     <form method="dialog">
-                        <button class="dialog_backout_button"><img src="assets/greenX.png" alt="terugknop"></button>
+                        <button class="dialog_backout_button"><p class="back_X">X</p></button>
                         <h2>Stekje aanmelden</h2>
                         <section class="input_stekje_aanmelden">
                             <input type="text" placeholder="Naam">
                             <input type="text" placeholder="Wat voor stekje biedt u aan?">
                             <input type="text" placeholder="Welk stekje wilt u?">
-                            <input type="submit" value="Let's do it">
+                            <input class="main_button" type="submit" value="Aanmelden">
                         </section>
                     </form>
                 </dialog>
@@ -50,10 +51,19 @@
                     <dialog id="dialog">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <button class="dialog_backout_button" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Orchidee</h3>
-                                <img src="assets/plant(1).avif" alt="Orchidee">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                                <div class="dialog_img_button">
+                                    <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                    <img src="assets/plant(1).avif" alt="Orchidee">
+                                </div>
+                                
+                                <div class="dialog_text">
+                                    <h3>Orchidee</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+
+                                    <button class="main_button">Deze wil ik!</button>
+                                </div>
+
                             </div>  
                         </form>
                     </dialog>
@@ -68,10 +78,18 @@
                     <dialog id="dialog2">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Kale Jonker</h3>
-                                <img src="assets/plant(2).avif" alt="kale jonker">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                                <div class="dialog_img_button">
+                                    <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                    <img src="assets/plant(2).avif" alt="Kale Jonker">
+                                </div>
+                                
+                                <div class="dialog_text">
+                                    <h3>Kale Jonker</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+
+                                    <button class="main_button">Deze wil ik!</button>
+                                </div>
                             </div>  
                         </form>
                     </dialog>
@@ -86,10 +104,18 @@
                     <dialog id="dialog3">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Duifkruid</h3>
-                                <img src="assets/plant(3).avif" alt="Duifkruid">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                                <div class="dialog_img_button">
+                                    <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                    <img src="assets/plant(3).avif" alt="Duifkruid">
+                                </div>
+                                
+                                <div class="dialog_text">
+                                    <h3>Duifkruid</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+
+                                    <button class="main_button">Deze wil ik!</button>
+                                </div>
                             </div>  
                         </form>
                     </dialog>
@@ -104,10 +130,18 @@
                     <dialog id="dialog4">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Longkruid</h3>
-                                <img src="assets/plant(4).avif" alt="Longkruid">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                                <div class="dialog_img_button">
+                                    <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                    <img src="assets/plant(4).avif" alt="Longkruid">
+                                </div>
+                                
+                                <div class="dialog_text">
+                                    <h3>Longkruid</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+
+                                    <button class="main_button">Deze wil ik!</button>
+                                </div>
                             </div>  
                         </form>
                     </dialog>
@@ -122,10 +156,18 @@
                     <dialog id="dialog5">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Bieslook</h3>
-                                <img src="assets/plant(5).avif" alt="Bieslook">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                                <div class="dialog_img_button">
+                                    <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                    <img src="assets/plant(5).avif" alt="Bieslook">
+                                </div>
+                                
+                                <div class="dialog_text">
+                                    <h3>Bieslook</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+
+                                    <button class="main_button">Deze wil ik!</button>
+                                </div>
                             </div>  
                         </form>
                     </dialog>
@@ -140,10 +182,18 @@
                     <dialog id="dialog6">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Bieslook</h3>
-                                <img src="assets/plant(6).avif" alt="Bieslook">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                                <div class="dialog_img_button">
+                                    <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                    <img src="assets/plant(6).avif" alt="Zonnebloem">
+                                </div>
+                                
+                                <div class="dialog_text">
+                                    <h3>Zonnebloem</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+
+                                    <button class="main_button">Deze wil ik!</button>
+                                </div>
                             </div>  
                         </form>
                     </dialog>
@@ -157,12 +207,18 @@
 
                     <dialog id="dialog7">
                         <form method="dialog">
-                            <div class="stekdialog">
-                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Bieslook</h3>
-                                <img src="assets/plant(7).avif" alt="Bieslook">
+                            <div class="dialog_img_button">
+                                <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+                                <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                <img src="assets/plant(7).avif" alt="Cactus">
+                            </div>
+                            
+                            <div class="dialog_text">
+                                <h3>Cactus</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
-                            </div>  
+
+                                <button class="main_button">Deze wil ik!</button>
+                            </div>
                         </form>
                     </dialog>
 
@@ -176,10 +232,18 @@
                     <dialog id="dialog8">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Bieslook</h3>
-                                <img src="assets/plant(8).avif" alt="paardebloem">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+                                <div class="dialog_img_button">
+                                    <h1><img id="titel_logo" src="assets\blaadjes.png" alt="logo">Plantswap</h1>
+                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                    <img src="assets/plant(8).avif" alt="Paardenbloem">
+                                </div>
+                                
+                                <div class="dialog_text">
+                                    <h3>Paardenbloem</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
+
+                                    <button class="main_button">Deze wil ik!</button>
+                                </div>
                             </div>  
                         </form>
                     </dialog>
@@ -188,24 +252,6 @@
 
                 </div> 
 
-                <div>
-                    <img src="assets/plant(9).avif" alt="Borealis">
-
-                    <dialog id="dialog9">
-                        <form method="dialog">
-                            <div class="stekdialog">
-                                <button class="dialogbutton" aria-label="terug naar beschikbare stekjes"><img src="assets/greenX.png" alt="terugknop"></button>
-                                <h3>Bieslook</h3>
-                                <img src="assets/plant(9).avif" alt="Borealis">
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
-                            </div>  
-                        </form>
-                    </dialog>
-
-                    <button class="stekjes_meer_info_button" onclick="dialog8.showModal()">Borealis</button>
-       
-                </div> 
-           
             </section>
 
         </div>

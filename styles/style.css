@@ -37,7 +37,7 @@ header{
     color: var(--textcolor);
 }
                     
-header > h1{
+h1{
     font-family: BuurtCampus;
     display: flex;
     flex-direction: column;
@@ -52,9 +52,8 @@ header > h1{
     max-width: 35em;
 }
 
-header > article > button{
+.main_button{
     text-align: center;
-    margin-left: 25%;
     width: 50%;
     border: none;
     height: 3em;
@@ -65,7 +64,7 @@ header > article > button{
     margin-top: 2em;
 }
 
-header > article > button:hover{
+.main_button:hover{
     opacity: 80%;
 }
 
@@ -74,6 +73,9 @@ header > article > button:hover{
 }
 
 header article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-top: 1em;
     width: 90%;
     max-width: 30em;
@@ -164,37 +166,56 @@ dialog{
     border-radius: 0.5em;
     border: none;
     margin: auto;
-    width: 30em;
+    width: 20em;
     max-width: 30em;
-    height: 35em;
+    height: 85%;
+}
+
+input{
+    width: 15rem;
+    margin-bottom: 1rem;
+}
+
+form > h2{
+    padding-top: 2rem;
+
 }
 
 .input_stekje_aanmelden{
-    width: 20em;
-    margin-left: 10em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
 }
 
 .stekdialog{
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
-    height: 100%;
     color: black;
     background-color: white;
-    border: none;
-    padding: 1em;
-}
-
-.dialog_backout_button > img {
-    width: 30px;
-    background-color: transparent;
     border: none;
 }
 
 .dialog_backout_button{
     background-color: transparent;
     border: none;
-    margin-left: 90%;
+    position: absolute;
+    left: 85%;
+    bottom: 90%;
+}
+
+.dialog_backout_button:hover{
+    transform: scale(1.2);
+    transition: 0.2s;
+}
+
+.back_X{
+    font-weight: 700;
+    font-size: 2rem;
 }
 
 dialog:modal{
@@ -206,12 +227,42 @@ dialog::backdrop{
     background-color: black;
 }
 
-.stekdialog > img{
-    width: 100%;
+.dialog_img_button{
+    display: flex;
+    justify-content: center;
 }
 
-.dialog_stekje_aanmelden{
+.dialog_img_button > h1{
+    position: absolute;
+    top: 5%;
+}
+
+.dialog_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form > h1{
+    position: absolute;
+    top:5%;
+}
+
+.dialog_img_button > img {
+    width: 100%;
+    padding-bottom: 1rem;
+}
+
+.dialog_text > h3{
+    padding-bottom: 1rem;
+}
+
+#dialog_stekje_aanmelden{
     height: 30em;
+}
+
+#dialog_stekje_aanmelden > h1{
+    padding-top: 2rem;
 }
 
 .verzorgingstips > ul{
@@ -329,23 +380,70 @@ footer img{
     dialog{
         border-radius: 1em;
         margin: auto;
-        width: 30em;
+        width: 60rem;
+        height: 40rem;
         padding: 0;
         overflow-y: hidden;
         transition: 0.2s;
+    }
+
+    #dialog_stekje_aanmelden{
+        width: 30rem;
     }
  
     dialog::backdrop{
         opacity: 30%;
         background-color: black;
     }
-    
-    .stekdialog > img{
-        width: 100%;
+
+    .stekdialog{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
     }
 
+    .dialog_img_button{
+        flex-direction: row;
+        width: 50%;
+        justify-content: flex-start;
+        height: 41rem;
+    }
+    
+    .dialog_img_button > h1{
+        position: absolute;
+        top:5%;
+        right: 25%;
+    }
+
+    .dialog_backout_button{
+        left: 92%;
+    }
+
+    .dialog_text{
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dialog_text > h3{
+        font-size: 30px;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+        text-align: center;
+    }
+
+    .dialog_text > p {   
+        max-width: 25rem;
+    }
+
+    }
+
+    
     #buurtcampus_googlemaps > iframe{
         max-width: 700px;
         height: 350px;
     }
-}
+
