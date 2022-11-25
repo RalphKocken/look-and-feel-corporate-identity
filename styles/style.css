@@ -4,7 +4,8 @@
 }
 
 :root{
-    --textcolor: #333467;
+    --maintextcolor: #333467;
+    --secondarytextcolor: white;
     --background-color:#333467;
     --button-color: #DE6E3F;
 }
@@ -14,13 +15,15 @@
     src: url("../assets/Buurtcampus.ttf");
 }
 
-h1{
-    font-family: BuurtCampus;
-}
-
 body{
     font-family: Arial, Helvetica, sans-serif;
     line-height: 140%;
+}
+
+.section_logo{
+    display: flex;
+    justify-content: center;
+    margin: auto;
 }
 
 .buurtcampus_topleft_logo{
@@ -34,17 +37,20 @@ header{
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 3em;
-    color: var(--textcolor);
+    color: var(--maintextcolor);
 }
-                    
-h1{
-    font-family: BuurtCampus;
+
+.plant_swap_logo{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    margin-bottom: 1em;
+    width: 15em;
+    margin: auto;
+    
+}
+
+h2, h3{
     text-align: center;
+    padding: 1em;
+    color: var(--maintextcolor);
 }
 
 .frontpage_stekjesbieb_img{
@@ -69,7 +75,7 @@ h1{
 }
 
 #titel_logo{
-    width: 1.5em;
+    width: 2em;
 }
 
 header article{
@@ -81,21 +87,11 @@ header article{
     max-width: 30em;
 }
 
-header h2{
-    margin-bottom: 0.5em;
-    text-align: center;
-}
-
 .container{
     margin-bottom: 2em;
     padding-bottom: 2em;
 }
 
-.container h2{
-    text-align: center;
-    color: var(--background-color);
-    padding: 1em;
-}
 
 .stekjeslijst{
     display: flex;
@@ -154,12 +150,12 @@ header h2{
     flex-direction: column;
     align-items: center;
     background-color: var(--background-color);
-    color: white;
+    color: var(--secondarytextcolor);
     padding: 2em;
 }
 
 .verzorgingstips > h2{
-    padding-bottom: 1em;
+    color: var(--secondarytextcolor);
 }
 
 dialog{
@@ -176,10 +172,6 @@ input{
     margin-bottom: 1rem;
 }
 
-form > h2{
-    padding-top: 2rem;
-
-}
 
 .input_stekje_aanmelden{
     display: flex;
@@ -253,21 +245,15 @@ form > h1{
     padding-bottom: 1rem;
 }
 
-.dialog_text > h3{
-    padding-bottom: 1rem;
-}
-
 #dialog_stekje_aanmelden{
     height: 30em;
 }
 
-#dialog_stekje_aanmelden > h1{
-    padding-top: 2rem;
-}
 
 .verzorgingstips > ul{
-    color: white;
+    color: var(--secondarytextcolor);
 }
+
 
 .content{
     display: flex;
@@ -284,10 +270,6 @@ form > h1{
     width: 90%;
 }
 
-.content h2{
-    text-align: center;
-    margin: 1em;
-}
 
 #buurtcampus_googlemaps{
     width: 100%;
@@ -323,10 +305,6 @@ footer img{
         column-gap: 4em;
     }
 
-    header:focus{
-        border: 1px solid red;
-    }
-
     .content{
         display: flex;
         flex-direction: row;
@@ -334,12 +312,6 @@ footer img{
         align-items: baseline;
         flex-wrap: wrap;
         column-gap: 5em;
-    }
-
-
-    .content h2{
-        text-align: center;
-        margin-bottom: 1em;
     }
 
     .container{
@@ -410,12 +382,6 @@ footer img{
         height: 41rem;
     }
     
-    .dialog_img_button > h1{
-        position: absolute;
-        top:5%;
-        right: 25%;
-    }
-
     .dialog_backout_button{
         left: 92%;
     }
@@ -428,22 +394,13 @@ footer img{
         align-items: center;
     }
 
-    .dialog_text > h3{
-        font-size: 30px;
-        padding-top: 5rem;
-        padding-bottom: 2rem;
-        text-align: center;
-    }
-
     .dialog_text > p {   
         max-width: 25rem;
     }
-
-    }
-
     
     #buurtcampus_googlemaps > iframe{
         max-width: 700px;
         height: 350px;
     }
 
+}
