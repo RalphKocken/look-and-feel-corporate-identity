@@ -10,31 +10,30 @@
 <body>
 
   
-        <img class="buurtcampus_topleft_logo" src="assets/BuurtcampusOostLogo.svg" alt="Buurtcampus">
-        <img class="plant_swap_logo"src="assets/PlantSwap-logo.png">
+        <img class="buurtcampus-topleft-logo" src="assets/BuurtcampusOostLogo.svg" alt="Buurtcampus">
+        <img class="plant-swap-logo"src="assets/PlantSwap-logo.png">
 
     <header>
-    
-        <img src="assets/stekjesbieb.jpg" class="frontpage_stekjesbieb_img" alt="Stekjesbieb">
-        <article class="header_article">
+        <img src="assets/stekjesbieb.jpg" class="frontpage-stekjesbieb-img" alt="Stekjesbieb">
+        <article class="header-article">
             <h2>Hoe werkt het?</h2>
             <p>Heb jij een of meerdere plantenstekjes over en zou je die graag willen ruilen voor een nieuw plantje?</p>
             <br>    
             <p>Meld je stekje hier aan en ruil ‘m via de app. Schrijf de Latijnse naam van je plant en eventuele verzorgingstips op een labeltje en neem ‘m mee naar de OBA Linnaeusstraat in Amsterdam.  
             </p>
-            <button class="main_button" onclick="dialog_stekje_aanmelden.showModal()">Stekje aanmelden</button>
-                <dialog id="dialog_stekje_aanmelden">
-                    <form method="dialog">
-                        <button class="dialog_backout_button"><p class="back_X">X</p></button>
-                        <h2>Stekje aanmelden</h2>
-                        <section class="input_stekje_aanmelden">
-                            <input type="text" placeholder="Naam">
-                            <input type="text" placeholder="Wat voor stekje biedt u aan?">
-                            <input type="text" placeholder="Welk stekje wilt u?">
-                            <input class="main_button" type="submit" value="Aanmelden">
-                        </section>
-                    </form>
-                </dialog>
+            <button class="main-button" onclick="dialogstekjeaanmelden.showModal()">Stekje aanmelden</button>
+            <dialog id="dialogstekjeaanmelden">
+                <form method="dialog">
+                    <button class="dialog-backout-button"><p class="back-X">X</p></button>
+                    <h2>Stekje aanmelden</h2>
+                    <section class="input-stekje-aanmelden">
+                        <input type="text" placeholder="Naam">
+                        <input type="text" placeholder="Wat voor stekje biedt u aan?">
+                        <input type="text" placeholder="Welk stekje wilt u?">
+                        <input class="main-button" type="submit" value="Aanmelden">
+                    </section>
+                </form>
+            </dialog>
         </article>  
     </header>
 
@@ -51,23 +50,20 @@
                     <dialog id="dialog">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <div class="dialog_img_button">
-                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                <div class="dialog-img-button">
+                                    <button class="dialog-backout-button"><p class="back-X">X</p></button>
                                     <img src="assets/plant(1).avif" alt="Orchidee">
                                 </div>
-                                
-                                <div class="dialog_text">
+                                <div class="dialog-text">
                                     <h3>Orchidee</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
-
-                                    <button class="main_button">Deze wil ik!</button>
+                                    <button class="main-button">Deze wil ik!</button>
                                 </div>
-
                             </div>  
                         </form>
                     </dialog>
 
-                    <button class="stekjes_meer_info_button" onclick="dialog.showModal()">Orchidee</button>
+                    <button class="stekjes-meer-info-button" onclick="dialog.showModal()">Orchidee</button>
 
                 </div>
                 
@@ -77,22 +73,22 @@
                     <dialog id="dialog2">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <div class="dialog_img_button">
-                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                <div class="dialog-img-button">
+                                    <button class="dialog-backout-button"><p class="back-X">X</p></button>
                                     <img src="assets/plant(2).avif" alt="Kale Jonker">
                                 </div>
                                 
-                                <div class="dialog_text">
+                                <div class="dialog-text">
                                     <h3>Kale Jonker</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
 
-                                    <button class="main_button">Deze wil ik!</button>
+                                    <button class="main-button">Deze wil ik!</button>
                                 </div>
                             </div>  
                         </form>
                     </dialog>
 
-                    <button class="stekjes_meer_info_button" onclick="dialog2.showModal()">Kale Jonker</button>
+                    <button class="stekjes-meer-info-button" onclick="dialog2.showModal()">Kale Jonker</button>
 
                 </div> 
 
@@ -102,22 +98,22 @@
                     <dialog id="dialog3">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <div class="dialog_img_button">
-                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                <div class="dialog-img-button">
+                                    <button class="dialog-backout-button"><p class="back-X">X</p></button>
                                     <img src="assets/plant(3).avif" alt="Duifkruid">
                                 </div>
                                 
-                                <div class="dialog_text">
+                                <div class="dialog-text">
                                     <h3>Duifkruid</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
 
-                                    <button class="main_button">Deze wil ik!</button>
+                                    <button class="main-button">Deze wil ik!</button>
                                 </div>
                             </div>  
                         </form>
                     </dialog>
 
-                    <button class="stekjes_meer_info_button" onclick="dialog3.showModal()">Duifkruid</button>
+                    <button class="stekjes-meer-info-button" onclick="dialog3.showModal()">Duifkruid</button>
         
                 </div> 
 
@@ -127,22 +123,22 @@
                     <dialog id="dialog4">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <div class="dialog_img_button">
-                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                <div class="dialog-img-button">
+                                    <button class="dialog-backout-button"><p class="back-X">X</p></button>
                                     <img src="assets/plant(4).avif" alt="Longkruid">
                                 </div>
                                 
-                                <div class="dialog_text">
+                                <div class="dialog-text">
                                     <h3>Longkruid</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
 
-                                    <button class="main_button">Deze wil ik!</button>
+                                    <button class="main-button">Deze wil ik!</button>
                                 </div>
                             </div>  
                         </form>
                     </dialog>
 
-                    <button class="stekjes_meer_info_button" onclick="dialog4.showModal()">Longkruid</button>
+                    <button class="stekjes-meer-info-button" onclick="dialog4.showModal()">Longkruid</button>
        
                 </div> 
 
@@ -152,22 +148,22 @@
                     <dialog id="dialog5">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <div class="dialog_img_button">
-                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                <div class="dialog-img-button">
+                                    <button class="dialog-backout-button"><p class="back-X">X</p></button>
                                     <img src="assets/plant(5).avif" alt="Bieslook">
                                 </div>
                                 
-                                <div class="dialog_text">
+                                <div class="dialog-text">
                                     <h3>Bieslook</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
 
-                                    <button class="main_button">Deze wil ik!</button>
+                                    <button class="main-button">Deze wil ik!</button>
                                 </div>
                             </div>  
                         </form>
                     </dialog>
 
-                    <button class="stekjes_meer_info_button" onclick="dialog5.showModal()">Bieslook</button>
+                    <button class="stekjes-meer-info-button" onclick="dialog5.showModal()">Bieslook</button>
        
                 </div> 
 
@@ -177,22 +173,22 @@
                     <dialog id="dialog6">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <div class="dialog_img_button">
-                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                <div class="dialog-img-button">
+                                    <button class="dialog-backout-button"><p class="back-X">X</p></button>
                                     <img src="assets/plant(6).avif" alt="Zonnebloem">
                                 </div>
                                 
-                                <div class="dialog_text">
+                                <div class="dialog-text">
                                     <h3>Zonnebloem</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
 
-                                    <button class="main_button">Deze wil ik!</button>
+                                    <button class="main-button">Deze wil ik!</button>
                                 </div>
                             </div>  
                         </form>
                     </dialog>
        
-                    <button class="stekjes_meer_info_button" onclick="dialog6.showModal()">Zonnebloem</button>
+                    <button class="stekjes-meer-info-button" onclick="dialog6.showModal()">Zonnebloem</button>
 
                 </div> 
 
@@ -201,21 +197,21 @@
 
                     <dialog id="dialog7">
                         <form method="dialog">
-                            <div class="dialog_img_button">
-                                <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                            <div class="dialog-img-button">
+                                <button class="dialog-backout-button"><p class="back-X">X</p></button>
                                 <img src="assets/plant(7).avif" alt="Cactus">
                             </div>
                             
-                            <div class="dialog_text">
+                            <div class="dialog-text">
                                 <h3>Cactus</h3>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
 
-                                <button class="main_button">Deze wil ik!</button>
+                                <button class="main-button">Deze wil ik!</button>
                             </div>
                         </form>
                     </dialog>
 
-                    <button class="stekjes_meer_info_button" onclick="dialog3.showModal()">Cactus</button>
+                    <button class="stekjes-meer-info-button" onclick="dialog3.showModal()">Cactus</button>
 
                 </div> 
 
@@ -225,22 +221,22 @@
                     <dialog id="dialog8">
                         <form method="dialog">
                             <div class="stekdialog">
-                                <div class="dialog_img_button">
-                                    <button class="dialog_backout_button"><p class="back_X">X</p></button>
+                                <div class="dialog-img-button">
+                                    <button class="dialog-backout-button"><p class="back-X">X</p></button>
                                     <img src="assets/plant(8).avif" alt="Paardenbloem">
                                 </div>
                                 
-                                <div class="dialog_text">
+                                <div class="dialog-text">
                                     <h3>Paardenbloem</h3>
                                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium.</p>
 
-                                    <button class="main_button">Deze wil ik!</button>
+                                    <button class="main-button">Deze wil ik!</button>
                                 </div>
                             </div>  
                         </form>
                     </dialog>
 
-                    <button class="stekjes_meer_info_button" onclick="dialog8.showModal()">Paardenbloem</button>
+                    <button class="stekjes-meer-info-button" onclick="dialog8.showModal()">Paardenbloem</button>
 
                 </div> 
 
@@ -261,39 +257,39 @@
 
         <section class="content">
 
-            <article>
+            <article class="utility-article">
                 <h2>Over ons</h2>
                 <p>De Buurtcampus Oost heeft als doel Amsterdam-Oost duurzamer, inclusiever en gezonder te maken. Plant Swap Amsterdam zorgt ervoor dat plantenliefhebbers elkaar ontmoeten in de bibliotheek. Daarnaast hebben planten in huis een positief effect op je lichamelijke en geestelijke gezondheid. Veel mensen weten niet goed hoe ze voor planten moeten zorgen en kopen nieuwe als ze dood gaan. In het kader van duurzaamheid, gezondheid en meer sociale connectie, is PlantSwap Amsterdam een plek van sociale ontmoeting, waar mensen samen leren over planten.</p>
             </article>
             
-            <article>
+            <article class="utility-article">
                 <h2>Plantje doneren</h2>
                 <p>Heb jij (net als wij) teveel planten in huis? Wij zijn super blij als je stekjes komt doneren. Je kunt ze aanmelden via de app en daarna neerzetten in de PlantSwap kast in de bieb.</p>
             </article>
 
-            <article>
+            <article class="utility-article">
                 <h2>Duurzaamheid</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium. Integer vitae ornare ipsum, non efficitur massa. Donec gravida rutrum diam.</p>
             </article>
 
-            <article>
+            <article class="utility-article">
                 <h2>Workshops</h2>
                 <p>De eerste workshop ‘Planten stekken en verzorgen’ zal plaatsvinden in maart 2023 in de OBA Linnaeusstraat, meld je hier aan voor meer informatie en om op de hoogte te blijven.</p>
             </article>
 
-            <article>
+            <article class="utility-article">
                 <h2>Plantendocter</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium. Integer vitae ornare ipsum, non efficitur massa. Donec gravida rutrum diam.</p>
             </article>
             
-            <article>
+            <article class="utility-article">
                 <h2>Community</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras pulvinar tristique dolor consequat sagittis. Ut non volutpat neque. Vivamus dapibus at mi eget auctor. Phasellus dignissim luctus tellus, et molestie tellus tempus quis. Proin congue egestas arcu ac pretium. Integer vitae ornare ipsum, non efficitur massa. Donec gravida rutrum diam.</p>
             </article>
 
         </section>
 
-        <section id="buurtcampus_googlemaps">
+        <section id="buurtcampus-googlemaps">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.6761957784674!2d4.92404451559515!3d52.358157855963306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c60976cd336d71%3A0x6610b420a3c48f0e!2sLinnaeusstraat%2044%2C%201092%20CL%20Amsterdam!5e0!3m2!1snl!2snl!4v1667915508745!5m2!1snl!2snl" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </section>
     
