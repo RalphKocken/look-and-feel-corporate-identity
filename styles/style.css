@@ -7,7 +7,7 @@
     --maintextcolor: #333467;
     --secondarytextcolor: white;
     --background-color:#333467;
-    --button-color: #DE6E3F;
+    --button-color: #333467;
     
 }
 
@@ -21,10 +21,16 @@ body{
     line-height: 140%;
 }
 
-.section-logo{
-    display: flex;
-    justify-content: center;
-    margin: auto;
+h2{
+    text-align: center;
+    padding: 1em;
+    color: var(--maintextcolor);
+}
+
+h3{
+    text-align: center;
+    padding: 0.5em;
+    color: var(--maintextcolor);
 }
 
 .buurtcampus-topleft-logo{
@@ -34,72 +40,70 @@ body{
 
 header{
     display: flex;
-    flex-direction: column; 
-    flex-wrap: wrap;    	
+    flex-direction: column;    	
     align-items: center;
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     color: var(--maintextcolor);
+}
+
+.header-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 30rem;
+    padding: 1em;
 }
 
 .plant-swap-logo{
     display: flex;
     width: 15em;
     margin: auto;
-    
-}
-
-h2, h3{
-    text-align: center;
-    padding: 1em;
-    color: var(--maintextcolor);
 }
 
 .frontpage-stekjesbieb-img{
     width: 100%;
-    max-width: 30em;
+    max-width: 40em;
+}
+
+#dialogstekjeaanmelden{
+    width: 90%;
+    max-width: 30rem;
+    height: 80%;
+    border-radius: 5px;
+    margin: auto;
+}
+
+.form-stekje-aanmelden{
+    display: flex;
+    flex-direction: column;
 }
 
 .main-button{
     text-align: center;
-    width: 50%;
     border: none;
-    height: 3em;
+    height: 2.5em;
+    width: 10em;
     background-color: var(--button-color);
-    border-radius: 1em;
+    border-radius: 5px;
     color: white;
     font-size: 1.2em;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 .main-button:hover{
-    opacity: 80%;
-}
-
-#titel-logo{
-    width: 2em;
-}
-
-header > article{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1em;
-    width: 90%;
-    max-width: 30em;
+    background-color: #F26f20;
 }
 
 .container{
-    margin-bottom: 2em;
-    padding-bottom: 2em;
+    margin-bottom: 1em;
 }
-
 
 .stekjeslijst{
     display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1em;
     overflow-x: scroll;
-    padding-bottom: 1em;
 }
 
 .stekjeslijst::-webkit-scrollbar{
@@ -127,7 +131,8 @@ header > article{
 }
 
 .stekjeslijst > div > img{
-    width: 250px;
+    width: 150px;
+    border-radius: 5px;
 }
 
 .stekjes-meer-info-button{
@@ -143,7 +148,8 @@ header > article{
 }
 
 .stekjes-meer-info-button:hover{
-    opacity: 80%;
+    background-color: #F26f20;
+    color: white;
 }
 
 .verzorgingstips{
@@ -152,125 +158,43 @@ header > article{
     align-items: center;
     background-color: var(--background-color);
     color: var(--secondarytextcolor);
-    padding: 2em;
+    padding: 2em 1em 2em 1em;
 }
 
 .verzorgingstips > h2{
     color: var(--secondarytextcolor);
 }
 
-dialog{
-    border-radius: 0.5em;
-    border: none;
-    margin: auto;
-    width: 20em;
-    max-width: 30em;
-    height: 85%;
-}
-
-input{
-    width: 15rem;
-    margin-bottom: 1rem;
-}
-
-.input-stekje-aanmelden{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding-top: 2rem;
-}
-
-.stekdialog{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: black;
-    background-color: white;
-    border: none;
-}
-
-.dialog-backout-button{
-    background-color: transparent;
-    border: none;
-    position: absolute;
-    left: 85%;
-    bottom: 90%;
-}
-
-.dialog-backout-button:hover{
-    transform: scale(1.2);
-    transition: 0.2s;
-}
-
-.back-X{
-    font-weight: 700;
-    font-size: 2rem;
-}
-
-dialog:modal{
-    max-width: 100%;
-}
-
-dialog::backdrop{
-    opacity: 70%;
-    background-color: black;
-}
-
-.dialog-img-button{
-    display: flex;
-    justify-content: center;
-}
-
-.dialog-img-button > h1{
-    position: absolute;
-    top: 5%;
-}
-
-.dialog-text{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-form > h1{
-    position: absolute;
-    top:5%;
-}
-
-.dialog-img-button > img {
-    width: 100%;
-    padding-bottom: 1rem;
-}
-
-#dialogstekjeaanmelden{
-    height: 30em;
-    width: 20em;
-}
-
 .verzorgingstips > ul{
     color: var(--secondarytextcolor);
+}
+
+.verzorgingstips > h2{
+    padding-top: 0;
 }
 
 .content{
     display: flex;
     flex-direction: column;
     align-items: center;
-    row-gap: 1em;
     font-family: Arial, Helvetica, sans-serif;
     color: var(--textcolor);
     margin-bottom: 3em;
 }
 
 .utility-article{
-    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0em 1em 0em 1em;
+    width: 90%;
+    max-width: 30em;
 }
 
-.content > article{
-    max-width: 30em;
-    width: 90%;
+.icon-styling{
+    width: 120px;
+    padding: 1em;
+    margin-top: 1em;
 }
 
 #buurtcampus-googlemaps{
@@ -304,24 +228,45 @@ footer img{
         flex-direction: row;
         justify-content: center;
         align-items: flex-start;
-        column-gap: 4em;
+        gap: 2%;
+    }
+
+    .header-article{
+        min-width: 15rem;
+        max-width: 30rem;
+        padding-top: 0;
+    }
+
+    .header-article > h2{
+        padding-top: 0;
     }
 
     .content{
         display: flex;
         flex-direction: row;
         justify-content: center;
-        align-items: baseline;
         flex-wrap: wrap;
-        column-gap: 5em;
     }
 
-    .container{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .stekjeslijst > div > img {
+        width: 200px;
+        margin:1em;
     }
+    
+    #fotostek1{
+        border-radius: 1em;
+        width: 400px;
+        margin-top: 2em;
+    }
+
+    #buurtcampus-googlemaps > iframe{
+        max-width: 700px;
+        height: 350px;
+    }
+
+}
+
+@media screen and (min-width: 850px){
 
     .stekjeslijst{
         display: flex;
@@ -335,74 +280,9 @@ footer img{
         padding-bottom: 2em;
     }
 
-    button > img:hover{
-        transform: scale(1.2);
-    }
-    
     .stekjeslijst > div > img {
         width: 300px;
         height: 400px;
-        padding:1em;
-    }
-    
-    #fotostek1{
-        border-radius: 1em;
-        width: 400px;
-        margin-top: 2em;
-    }
-
-    dialog{
-        border-radius: 1em;
-        margin: auto;
-        width: 60rem;
-        height: 40rem;
-        padding: 0;
-        overflow-y: hidden;
-        transition: 0.2s;
-    }
-
-    #dialogstekjeaanmelden{
-        width: 30rem;
-    }
- 
-    dialog::backdrop{
-        opacity: 30%;
-        background-color: black;
-    }
-
-    .stekdialog{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-start;
-        align-items: flex-start;
-    }
-
-    .dialog-img-button{
-        flex-direction: row;
-        width: 50%;
-        justify-content: flex-start;
-        height: 41rem;
-    }
-    
-    .dialog-backout-button{
-        left: 92%;
-    }
-
-    .dialog-text{
-        width: 50%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    .dialog-text > p {   
-        max-width: 25rem;
-    }
-    
-    #buurtcampus-googlemaps > iframe{
-        max-width: 700px;
-        height: 350px;
     }
 
 }
