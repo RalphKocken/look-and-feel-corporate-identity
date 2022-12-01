@@ -50,6 +50,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 20rem;
     max-width: 30rem;
     padding: 1em;
 }
@@ -68,14 +69,62 @@ header{
 #dialogstekjeaanmelden{
     width: 90%;
     max-width: 30rem;
-    height: 80%;
     border-radius: 5px;
     margin: auto;
+}
+
+.close-dialog-button{
+    float: right;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.dialog-close-button-img{
+    width: 3em;
 }
 
 .form-stekje-aanmelden{
     display: flex;
     flex-direction: column;
+}
+
+.form-stekje-aanmelden input, label{
+    width: 100%;
+    padding: 0.5em;
+}
+
+.dialogstekjeslijst{
+    width: 90%;
+    max-width: 50rem;
+    margin: auto;
+}
+
+.dialogstekjeslijst section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialog-stekjes-img{
+    width: 90%;
+}
+
+.dialog-stekjes-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dialog-logo{
+    position: absolute;
+}
+
+.close-dialog-stekjes-button{
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    left: 85%;
 }
 
 .main-button{
@@ -92,6 +141,11 @@ header{
 
 .main-button:hover{
     background-color: #F26f20;
+}
+
+#stekje-aanmelden-button{
+    width: 10em;
+    margin: 2em auto 2em auto;
 }
 
 .container{
@@ -262,6 +316,34 @@ footer img{
     #buurtcampus-googlemaps > iframe{
         max-width: 700px;
         height: 350px;
+    }
+
+    .dialogstekjeslijst{
+        padding: 0;
+    }
+
+    .dialogstekjeslijst section{
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+
+    .dialog-stekjes-img{
+        width: 50%;
+    }
+
+    .dialog-stekjes-info{
+        margin: 2em 5%;
+        width: 40%;
+    }
+
+    .dialog-logo{
+        left: 10%;
+    }
+
+    .close-dialog-stekjes-button{
+        left: 92%;
+        top: 2%;
     }
 
 }
