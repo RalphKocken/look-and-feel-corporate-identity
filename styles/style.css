@@ -66,6 +66,11 @@ header{
     max-width: 40em;
 }
 
+dialog{
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 10px;
+}
 #dialogstekjeaanmelden{
     width: 90%;
     max-width: 30rem;
@@ -82,6 +87,11 @@ header{
 
 .dialog-close-button-img{
     width: 3em;
+}
+
+.dialogstekjeslijst::backdrop, #dialogstekjeaanmelden::backdrop{
+    opacity: 70%;
+    background-color: black;
 }
 
 .form-stekje-aanmelden{
