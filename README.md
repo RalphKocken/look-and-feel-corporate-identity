@@ -21,9 +21,6 @@ All-Human-Accessible-Website: Een opdracht om een website toegankelijk te maken 
 
 ## Bronnen
 
-https://www.a11yproject.com/
-
-
 ## Licentie
 
 This work is licensed under [GNU GPLv3](./LICENSE).
