@@ -2,7 +2,7 @@
 
 # Titel
 <!-- Geef je project een titel en schrijf in één zin wat het is -->
-All-Human-Accessible-Website: Een opdracht om een website toegankelijk te maken voor iedereen!
+Look and Feel Corporate-Identity
 
 ## Inhoudsopgave
 
@@ -16,10 +16,24 @@ All-Human-Accessible-Website: Een opdracht om een website toegankelijk te maken 
 <!-- Voeg een mooie poster visual toe 📸 -->
 <!-- Voeg een link toe naar Github Pages 🌐-->
 
+Dit project gaat over het maken en toepassen van een living-style-guide op een website. Bekijk hier onder eerst de style-guide en daarna de website. Vergelijk de twee met elkaar en bekijk welke elementen overeenkomen. 
+
+<img src="https://user-images.githubusercontent.com/106448490/205286218-b0d4247d-608c-4a68-80bb-49c6cc9bab17.png" width="400">
+<img src="https://user-images.githubusercontent.com/106448490/205286256-4cb9d511-4555-40ea-b21a-544563729d37.png" width="400">
+
+
+
+Style-guide: https://tolga1999.github.io/look-and-feel-living-styleguide/
+Website Plantswap: https://ralphkocken.github.io/look-and-feel-corporate-identity/
+
 ## Kenmerken
 <!-- Bij Kenmerken staat welke technieken zijn gebruikt en hoe. Wat is de HTML structuur? Wat zijn de belangrijkste dingen in CSS? Wat is er met Javascript gedaan en hoe? Misschien heb je een framwork of library gebruikt? -->
 
+Dit project is gemaakt in HTML en CSS. Ook is er een klein stukje JavaScript gebruikt om wat popups te maken. De HTML structuur is gemaakt volgens semantische waarden.  
 ## Bronnen
+https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dialog
+https://developer.mozilla.org/en-US/docs/Web/CSS/overflow
+
 
 ## Licentie
 
