@@ -71,6 +71,7 @@ dialog{
     border-radius: 5px;
     box-shadow: 0 0 10px;
 }
+
 #dialogstekjeaanmelden{
     width: 90%;
     max-width: 30rem;
@@ -151,6 +152,7 @@ dialog{
 
 .main-button:hover{
     background-color: #F26f20;
+    border: none;
 }
 
 #stekje-aanmelden-button{
