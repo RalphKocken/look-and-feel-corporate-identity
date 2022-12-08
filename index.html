@@ -27,11 +27,12 @@
         <button class="close-dialog-button" onclick="dialogstekjeaanmelden.close()"><img class="dialog-close-button-img" src="assets/closebtn.png"></button>
         <img class="plant-swap-logo"src="assets/PlantSwap-logo.png">
         <form method="dialog" class="form-stekje-aanmelden">
-            <label>Voornaam<input type="text"></label>
-            <label>Achternaam<input type="text"></label>
-            <label>E-mail<input type="email"></label>
+            <label>Voornaam<input type="text" required></label>
+            <label>Achternaam<input type="text" required></label>
+            <label>E-mail<input type="email" required></label>
             <label>Telefoonummer<input type="tel" maxlength="10" minlength="10"></label>
-            <label>Upload een foto van uw stekje<input type="file" accept="image/*"></label>
+            <label>Naam van uw stekje<input type="text" required></label>
+            <label>Upload een foto van uw stekje<input type="file" accept="image/*" required></label>
             <input type="submit" value="Stekje aanmelden" class="main-button" id="stekje-aanmelden-button">
         </form>
     </dialog>
