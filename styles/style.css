@@ -8,6 +8,7 @@
     --secondarytextcolor: white;
     --background-color:#333467;
     --button-color: #333467;
+    --button-hover-color: #F26f20;
     
 }
 
@@ -164,12 +165,48 @@ dialog{
     margin-bottom: 1em;
 }
 
+.container > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 0.5em;
+    padding: 0;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: var(--maintextcolor);
+}
+
+.verzorgings-niveau-button{
+    background-color: var(--background-color);
+    border: none;
+    height: 2em;
+    width: 7em;
+    color: var(--secondarytextcolor);
+    border-radius: 5px; 
+}
+
+.verzorgings-niveau-button:hover{
+    background-color: var(--button-hover-color);
+}
+
+.container > ul > li > button:focus{
+    background-color: var(--button-hover-color);
+}
+
+.container > ul > p{
+    text-align: center;
+    width: 100%;
+}
+
 .stekjeslijst{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 1em;
     overflow-x: scroll;
+    margin-top: 1.5rem;
 }
 
 .stekjeslijst::-webkit-scrollbar{
@@ -366,7 +403,6 @@ footer img{
         display: flex;
         flex-direction: row;
         align-items: center;
-        justify-content: flex-start;
         overflow-x: scroll;
         overflow-y: hidden;
         flex-wrap: nowrap;

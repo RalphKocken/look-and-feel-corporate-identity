@@ -36,15 +36,24 @@
         </form>
     </dialog>
 
-    <dialog id="dialogstekjeruilen">
+    <dialog id="dialogstekjer   uilen">
         <form id="stekjeruilen"></form>
     </dialog>
 
     <main> 
         <div class="container">
             <h2>Beschikbare stekjes</h2>
-            <section class="stekjeslijst">
-                <div>
+
+            <ul class="filter-links">
+                <p>Verzorgingsniveau:</p>
+                <li><button class="eenvoudigButton verzorgings-niveau-button">Eenvoudig</button></li>
+                <li><button class="gemiddeldButton verzorgings-niveau-button">Gemiddeld</button></li>
+                <li><button class="gevorderdButton verzorgings-niveau-button">Gevorderd</button></li>
+                <li><button class="laatalleszienButton verzorgings-niveau-button" autofocus>Alle niveau's</button></li>
+            </ul> 
+            
+            <section class="stekjeslijst" id="stekjeslijst">
+                <div class="eenvoudig">
                     <img src="assets/plant(1).avif" alt="Orchidee">
                     <button class="stekjes-meer-info-button" onclick="dialogorchidee.showModal()">Orchidee</button>
 
@@ -60,10 +69,9 @@
                             </div>
                         </section>
                     </dialog>
-
                 </div>
                 
-                <div>
+                <div class="gevorderd">
                     <img src="assets/plant(2).avif" alt="Kale Jonker">
                     <button class="stekjes-meer-info-button" onclick="dialogkalejonker.showModal()">Kale Jonker</button>
 
@@ -81,7 +89,7 @@
                     </dialog>
                 </div> 
 
-                <div>
+                <div class="gemiddeld">
                     <img src="assets/plant(3).avif" alt="Duifkruid">
                     <button class="stekjes-meer-info-button" onclick="dialogduifkruid.showModal()">Duifkruid</button>
                     <dialog class="dialogstekjeslijst" id="dialogduifkruid">
@@ -98,7 +106,7 @@
                     </dialog>
                 </div>
 
-                <div>
+                <div class="eenvoudig">
                     <img src="assets/plant(4).avif" alt="Longkruid">
                     <button class="stekjes-meer-info-button" onclick="dialoglongkruid.showModal()">Longkruid</button>
                     <dialog class="dialogstekjeslijst" id="dialoglongkruid">
@@ -115,7 +123,7 @@
                     </dialog>
                 </div> 
 
-                <div>
+                <div class="gevorderd">
                     <img src="assets/plant(5).avif" alt="Bieslook">
                     <button class="stekjes-meer-info-button" onclick="dialogbieslook.showModal()">Bieslook</button>
                     <dialog class="dialogstekjeslijst" id="dialogbieslook">
@@ -132,7 +140,7 @@
                     </dialog>
                 </div> 
 
-                <div>
+                <div class="eenvoudig">
                     <img src="assets/plant(6).avif" alt="Zonnebloem">
                     <button class="stekjes-meer-info-button" onclick="dialogzonnebloem.showModal()">Zonnebloem</button>
                     <dialog class="dialogstekjeslijst" id="dialogzonnebloem">
@@ -149,7 +157,7 @@
                     </dialog>
                 </div> 
 
-                <div>
+                <div class="gemiddeld">
                     <img src="assets/plant(7).avif" alt="Cactus">
                     <button class="stekjes-meer-info-button" onclick="dialogcactus.showModal()">Cactus</button>
                     <dialog class="dialogstekjeslijst" id="dialogcactus">
@@ -166,7 +174,7 @@
                     </dialog>
                 </div> 
 
-                <div>
+                <div class="eenvoudig">
                     <img src="assets/plant(8).avif" alt="Paardenbloem">
                     <button class="stekjes-meer-info-button" onclick="dialogpaardenbloem.showModal()">Paardenbloem</button>
                     <dialog class="dialogstekjeslijst" id="dialogpaardenbloem">
@@ -182,6 +190,7 @@
                         </section>
                     </dialog>
                 </div> 
+
             </section>
 
         </div>
