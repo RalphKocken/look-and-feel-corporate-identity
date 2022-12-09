@@ -21,7 +21,7 @@
             </p>
             <button class="main-button" onclick="dialogstekjeaanmelden.showModal()">Stekje Aanmelden</button>
         </article>
-    </header>
+    </header>   
 
     <dialog id="dialogstekjeaanmelden">       
         <button class="close-dialog-button" onclick="dialogstekjeaanmelden.close()"><img class="dialog-close-button-img" src="assets/closebtn.png"></button>
@@ -31,14 +31,10 @@
             <label>Achternaam<input type="text" required></label>
             <label>E-mail<input type="email" required></label>
             <label>Telefoonummer<input type="tel" maxlength="10" minlength="10"></label>
-            <label>Naam van uw stekje<input type="text" required></label>
-            <label>Upload een foto van uw stekje<input type="file" accept="image/*" required></label>
-            <input type="submit" value="Stekje aanmelden" class="main-button" id="stekje-aanmelden-button">
+            <label>Naam van uw stekje<input type="text" name="naampje" required></label>
+            <label>Upload een foto van uw stekje<input type="file" name="foto-stekje" accept="image/*" required></label>
+            <input type="submit" value="Stekje aanmelden" class="main-button stekje-aanmelden-button" id="stekje-aanmelden-button">
         </form>
-    </dialog>
-
-    <dialog id="dialogstekjer   uilen">
-        <form id="stekjeruilen"></form>
     </dialog>
 
     <main> 
@@ -54,7 +50,7 @@
             </ul> 
             
             <section class="stekjeslijst" id="stekjeslijst">
-                <div class="eenvoudig">
+                <div class="stekje eenvoudig">
                     <img src="assets/plant(1).avif" alt="Orchidee">
                     <button class="stekjes-meer-info-button" onclick="dialogorchidee.showModal()">Orchidee</button>
 
@@ -66,13 +62,20 @@
                             <div class="dialog-stekjes-info">
                                 <h3>Orchidee</h3>
                                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam illo ex veritatis eaque odio natus nam aliquam rerum aut reiciendis impedit voluptatibus rem quae, reprehenderit omnis corporis culpa cum, a iure similique? Laborum, cumque.</p>
-                                <button class="main-button" onclick="">Doe mij deze maar</button>
+                                <button class="main-button" onclick="dialogreserveren.showModal()">Doe mij deze maar</button>
                             </div>
                         </section>
+
+                        <dialog class= "dialog-reserveren" id="dialogreserveren">
+                            <form method="dialog">
+                                <input type="text">
+                            </form>
+                        </dialog>
+
                     </dialog>
                 </div>
                 
-                <div class="gevorderd">
+                <div class="stekje gevorderd">
                     <img src="assets/plant(2).avif" alt="Kale Jonker">
                     <button class="stekjes-meer-info-button" onclick="dialogkalejonker.showModal()">Kale Jonker</button>
 
@@ -90,7 +93,7 @@
                     </dialog>
                 </div> 
 
-                <div class="gemiddeld">
+                <div class=" stekje gemiddeld">
                     <img src="assets/plant(3).avif" alt="Duifkruid">
                     <button class="stekjes-meer-info-button" onclick="dialogduifkruid.showModal()">Duifkruid</button>
                     <dialog class="dialogstekjeslijst" id="dialogduifkruid">
@@ -107,7 +110,7 @@
                     </dialog>
                 </div>
 
-                <div class="eenvoudig">
+                <div class="stekje eenvoudig">
                     <img src="assets/plant(4).avif" alt="Longkruid">
                     <button class="stekjes-meer-info-button" onclick="dialoglongkruid.showModal()">Longkruid</button>
                     <dialog class="dialogstekjeslijst" id="dialoglongkruid">
@@ -124,7 +127,7 @@
                     </dialog>
                 </div> 
 
-                <div class="gevorderd">
+                <div class="stekje gevorderd">
                     <img src="assets/plant(5).avif" alt="Bieslook">
                     <button class="stekjes-meer-info-button" onclick="dialogbieslook.showModal()">Bieslook</button>
                     <dialog class="dialogstekjeslijst" id="dialogbieslook">
@@ -141,7 +144,7 @@
                     </dialog>
                 </div> 
 
-                <div class="eenvoudig">
+                <div class="stekje eenvoudig">
                     <img src="assets/plant(6).avif" alt="Zonnebloem">
                     <button class="stekjes-meer-info-button" onclick="dialogzonnebloem.showModal()">Zonnebloem</button>
                     <dialog class="dialogstekjeslijst" id="dialogzonnebloem">
@@ -158,7 +161,7 @@
                     </dialog>
                 </div> 
 
-                <div class="gemiddeld">
+                <div class="stekje gemiddeld">
                     <img src="assets/plant(7).avif" alt="Cactus">
                     <button class="stekjes-meer-info-button" onclick="dialogcactus.showModal()">Cactus</button>
                     <dialog class="dialogstekjeslijst" id="dialogcactus">
@@ -175,7 +178,7 @@
                     </dialog>
                 </div> 
 
-                <div class="eenvoudig">
+                <div class="stekje eenvoudig">
                     <img src="assets/plant(8).avif" alt="Paardenbloem">
                     <button class="stekjes-meer-info-button" onclick="dialogpaardenbloem.showModal()">Paardenbloem</button>
                     <dialog class="dialogstekjeslijst" id="dialogpaardenbloem">

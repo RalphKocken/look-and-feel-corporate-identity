@@ -139,6 +139,10 @@ dialog{
     left: 85%;
 }
 
+.dialog-reserveren{
+    width: 400px;
+    height: 500px;
+}
 .main-button{
     text-align: center;
     border: none;
@@ -349,6 +353,10 @@ footer img{
         flex-direction: row;
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    .stekjeslijst{
+        justify-content: flex-start;
     }
 
     .stekjeslijst > div > img {
