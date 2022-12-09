@@ -1,13 +1,20 @@
+let dialog = document.querySelector(".dialogstekjeslijst-orchidee");
+let openDialog = document.querySelector(".stekjes-meer-info-button");
+let closeDialog = document.querySelector(".close-dialog-stekjes-button");
+
 
 let eenvoudig = document.querySelectorAll(".eenvoudig");
 let gemiddeld = document.querySelectorAll(".gemiddeld");
 let gevorderd = document.querySelectorAll(".gevorderd");
+
+// alle stekjes
 let stekjesTotaal = document.querySelector(".stekjeslijst")
 let eenvoudigButton = document.querySelector(".eenvoudigButton");
 let gemiddeldButton = document.querySelector(".gemiddeldButton");
 let gevorderdButton = document.querySelector(".gevorderdButton");
 let laatalleszienButton = document.querySelector(".laatalleszienButton");
 let stekjeaanmeldenconfirm = document.querySelector(".stekje-aanmelden-button");
+
 
 // VOORBEELD VAN JUSTUS//
 
@@ -51,8 +58,6 @@ function laatalleszien(){
     element.style.display = "flex";
 
     });
-
- 
 }
 
 // eenvoudig knop
@@ -91,8 +96,7 @@ laatalleszienButton.addEventListener("click", laatalleszienShow);
     laatalleszien();
   }
 
-// VOORBEELD VAN KRIJN
-// Functie voor het toevoegen van stekjes
+
   var meldJePlantAanButton = document.getElementById('header-article > button')
   var plaatjeAanmeldenDialog = document.getElementById('dialogstekjeaanmelden')
   var section = document.querySelector('.stekjeslijst')
@@ -112,3 +116,4 @@ laatalleszienButton.addEventListener("click", laatalleszienShow);
     section.append(eenKloon)
   
     eenKloon.scrollIntoView()
+  })
